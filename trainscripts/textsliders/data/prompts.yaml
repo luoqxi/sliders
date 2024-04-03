@@ -1,21 +1,30 @@
-- target: "male person" # what word for erasing the positive concept from
-  positive: "male person, very old" # concept to erase
-  unconditional: "male person, very young" # word to take the difference from the positive concept
-  neutral: "male person" # starting point for conditioning the target
+- target: "1girl" # what word for erasing the positive concept from
+  positive: "1girl, sexy, large breasts, narrow waist, wide hips" # concept to erase
+  unconditional: "1girl, small breasts, flat breasts" # word to take the difference from the positive concept
+  neutral: "1girl" # starting point for conditioning the target
   action: "enhance" # erase or enhance
   guidance_scale: 4
   resolution: 512
   dynamic_resolution: false
   batch_size: 1
-- target: "female person" # what word for erasing the positive concept from
-  positive: "female person, very old" # concept to erase
-  unconditional: "female person, very young" # word to take the difference from the positive concept
-  neutral: "female person" # starting point for conditioning the target
-  action: "enhance" # erase or enhance
-  guidance_scale: 4
-  resolution: 512
-  dynamic_resolution: false
-  batch_size: 1
+# - target: "male person" # what word for erasing the positive concept from
+#   positive: "male person, very old" # concept to erase
+#   unconditional: "male person, very young" # word to take the difference from the positive concept
+#   neutral: "male person" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
+# - target: "female person" # what word for erasing the positive concept from
+#   positive: "female person, very old" # concept to erase
+#   unconditional: "female person, very young" # word to take the difference from the positive concept
+#   neutral: "female person" # starting point for conditioning the target
+#   action: "enhance" # erase or enhance
+#   guidance_scale: 4
+#   resolution: 512
+#   dynamic_resolution: false
+#   batch_size: 1
 # - target: "" # what word for erasing the positive concept from
 #   positive: "a group of people"  # concept to erase
 #   unconditional: "a person" # word to take the difference from the positive concept
@@ -163,7 +172,7 @@
 #   guidance_scale: 4
 #   resolution: 512
 #   dynamic_resolution: false
-#   batch_size: 1 
+#   batch_size: 1
 # - target: "girl" # what word for erasing the positive concept from
 #   positive: "baby girl" # concept to erase
 #   unconditional: "girl" # word to take the difference from the positive concept

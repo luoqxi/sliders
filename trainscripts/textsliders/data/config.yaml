@@ -1,6 +1,6 @@
 prompts_file: "trainscripts/textsliders/data/prompts.yaml"
 pretrained_model:
-  name_or_path: "CompVis/stable-diffusion-v1-4" # you can also use .ckpt or .safetensors models
+  name_or_path: "jzli/majicMIX-realistic-7" # you can also use .ckpt or .safetensors models
   v2: false # true if model is v2.x
   v_pred: false # true if model uses v-prediction
 network:

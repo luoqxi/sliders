@@ -17,7 +17,7 @@ train:
   lr_scheduler: "constant"
   max_denoising_steps: 50
 save:
-  name: "figureslider"
+  name: "ageslider"
   path: "./models"
   per_steps: 200
   precision: "float16"

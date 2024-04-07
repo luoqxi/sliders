@@ -18,7 +18,7 @@ train:
   lr_scheduler: "constant"
   max_denoising_steps: 50
 save:
-  name: "temp"
+  name: "oldphotoslider"
   path: "./models"
   per_steps: 200
   precision: "float16"

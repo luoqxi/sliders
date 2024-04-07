@@ -7,14 +7,14 @@
 #   resolution: 512
 #   dynamic_resolution: false
 #   batch_size: 1
-- target: "" # what word for erasing the positive concept from
-  positive: ""  # concept to erase
-  unconditional: "" # word to take the difference from the positive concept
-  neutral: "" # starting point for conditioning the target
+- target: "photo" # what word for erasing the positive concept from
+  positive: "photo, colorful"  # concept to erase
+  unconditional: "photo, gray, monochrome" # word to take the difference from the positive concept
+  neutral: "photo" # starting point for conditioning the target
   action: "enhance" # erase or enhance
-  guidance_scale: 1
+  guidance_scale: 4
   resolution: 512
-  dynamic_resolution: false
+  dynamic_resolution: true
   batch_size: 1
 # - target: "" # what word for erasing the positive concept from
 #   positive: "high detail, 8k, intricate, detailed, high resolution, high res, high quality"  # concept to erase
@@ -144,7 +144,7 @@
 #   guidance_scale: 4
 #   resolution: 512
 #   dynamic_resolution: false
-#   batch_size: 1 
+#   batch_size: 1
 # - target: "girl" # what word for erasing the positive concept from
 #   positive: "baby girl" # concept to erase
 #   unconditional: "girl" # word to take the difference from the positive concept

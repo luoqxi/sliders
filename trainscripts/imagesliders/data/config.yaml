@@ -1,6 +1,7 @@
 prompts_file: "trainscripts/imagesliders/data/prompts.yaml"
 pretrained_model:
   name_or_path: "CompVis/stable-diffusion-v1-4" # you can also use .ckpt or .safetensors models
+  # name_or_path: "jzli/majicMIX-realistic-7"
   v2: false # true if model is v2.x
   v_pred: false # true if model uses v-prediction
 network:
@@ -9,7 +10,7 @@ network:
   alpha: 1.0
   training_method: "noxattn"
 train:
-  precision: "bfloat16"
+  precision: "float16"
   noise_scheduler: "ddim" # or "ddpm", "lms", "euler_a"
   iterations: 1000
   lr: 0.0002
@@ -19,8 +20,8 @@ train:
 save:
   name: "temp"
   path: "./models"
-  per_steps: 500
-  precision: "bfloat16"
+  per_steps: 200
+  precision: "float16"
 logging:
   use_wandb: false
   verbose: false

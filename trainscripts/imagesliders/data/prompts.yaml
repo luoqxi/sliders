@@ -8,8 +8,8 @@
 #   dynamic_resolution: false
 #   batch_size: 1
 - target: "photo" # what word for erasing the positive concept from
-  positive: "photo, colorful"  # concept to erase
-  unconditional: "photo, gray, monochrome" # word to take the difference from the positive concept
+  positive: "photo, gray, monochrome"  # concept to erase
+  unconditional: "photo, colorful" # word to take the difference from the positive concept
   neutral: "photo" # starting point for conditioning the target
   action: "enhance" # erase or enhance
   guidance_scale: 4
